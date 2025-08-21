@@ -1,59 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursor Demo Page</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: blue;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-        }
-        .container {
-            max-width: 500px;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
-        .btn {
-            background-color: white;
-            color: #4e54c8;
-            padding: 15px 30px;
-            font-size: 1rem;
-            font-weight: bold;
-            border: none;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: background 0.3s ease, color 0.3s ease;
-        }
-        .btn:hover {
-            background-color: #4e54c8;
-            color: white;
-            border: 2px solid white;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to Cursor Demo</h1>
-        <p>This is a practice website which can be forked and used to practice Cursor.</p>
-        <button class="btn" onclick="alert('Button clicked!')">Button</button>
-        <button class="btn"><a href="./page1.html">Page 1</a></button>
-        <button class="btn"><a href="./page2.html">Page 2</a></button>
-        <button class="btn"><a href="./page3.html">Page 3</a></button>
+  <!-- Header -->
+  <header>
+    <nav>
+      <h1 class="logo">My Portfolio</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="resume-nooreen.pdf" class="btn resume-btn" download>View Resume</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-left">
+      <h2>Hello! I'm Nooreen</h2>
+      <p>Aspiring Developer | AI Enthusiast | Problem Solver</p>
+
+      <div class="hero-skills">
+        <h3>Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h4>Languages</h4>
+            <p>Python, Java, C/C++, SQL, HTML, CSS, JavaScript</p>
+          </div>
+          <div class="skill-card">
+            <h4>Frameworks / Libraries</h4>
+            <p>Flask, SpringBoot, TensorFlow, Sklearn, OpenCV, Pandas</p>
+          </div>
+          <div class="skill-card">
+            <h4>Cloud & DevOps</h4>
+            <p>AWS, GCP, Docker, Git</p>
+          </div>
+          <div class="skill-card">
+            <h4>Databases</h4>
+            <p>Postgres, MySQL, MongoDB</p>
+          </div>
+          <div class="skill-card">
+            <h4>Tools & Design</h4>
+            <p>Figma, Canva</p>
+          </div>
+        </div>
+      </div>
+
+      <br/>
+      <br/>
+      <a href="#projects" class="btn">See My Work</a>
+
     </div>
+
+    
+
+    <div class="hero-right">
+      <img src="image.jpg" alt="My Photo" class="profile-img">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      Software developer with experience in handling very large amounts of data on Cloud Platforms, 
+      performing analysis and dashboards as well as creating data pipelines. 
+      Currently expanding knowledge in usage of AI in web development. 
+      Background includes academic and project-based work (on Github as well) in database management systems, 
+      data structures and algorithms, computer vision and AI, with a strong focus on solving real-world problems. 
+      Committed to continuous learning, delivering high-quality user experiences, and contributing 
+      meaningfully in a collaborative, in-person environment.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="card">
+        <h3>Multiple Partial Object Detection in a Single Image using Segmentation and Elliptical Symmetry - Research GitHub
+</h3>
+        <p>A software which uses image processing and geometric operations to identify the location & labeling of objects in image
+- Implemented using segmentation of all objects, image reconstruction and performing a detection algorithm.
+Tools used: Python, Numpy, openCV, Math.</p>
+      </div>
+      <div class="card">
+        <h3>Event Management Website ( Full Stack )</h3>
+        <p>A website used to manage all events on user and admin end with dynamic user interface and multiple endpoints.
+- Designed responsive frontend using Figma, HTML, CSS, JavaScript, Bootstrap.
+- Integrated Flask backend, MySQL database, and REST APIs for data management and authentication services.
+Tools used: Python, Flask, HTML, Javascript, CSS, Bootstrap, MySQL, UML, REST APIs, MongoDB, Figma</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Feel free to reach out to me via email at <a href="mailto:nooreenf168@gmail.com">nooreenf168@gmail.com</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Nooreen. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
