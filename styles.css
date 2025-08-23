@@ -51,7 +51,7 @@ nav {
 /* Resume Button */
 .resume-btn {
   margin-left: 1.5rem;
-  background: #a64eff;
+  background: linear-gradient(135deg, #a64eff 0%, #ffea00 100%);
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 20px;
@@ -59,8 +59,8 @@ nav {
   text-decoration: none;
 }
 .resume-btn:hover {
-  background: #fff;
-  color: #a64eff;
+  background: linear-gradient(135deg, #ffea00 0%, #a64eff 100%);
+  color: #fff;
 }
 
 /* Hero Section */
@@ -89,9 +89,9 @@ nav {
   color: #ccc;
 }
 
-.btn {
+.btn, button {
   display: inline-block;
-  background: #a64eff;
+  background: linear-gradient(135deg, #a64eff 0%, #ffea00 100%);
   color: #fff;
   padding: 0.7rem 1.5rem;
   border-radius: 25px;
@@ -100,9 +100,9 @@ nav {
   transition: 0.3s;
 }
 
-.btn:hover {
-  background: #fff;
-  color: #a64eff;
+.btn:hover, button:hover {
+  background: linear-gradient(135deg, #ffea00 0%, #a64eff 100%);
+  color: #fff;
 }
 
 /* Hero Skills */
