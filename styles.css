@@ -187,6 +187,22 @@ nav {
   transform: translateY(-5px);
 }
 
+.card h3 {
+  position: relative;
+  padding-bottom: 3px;
+  margin-bottom: 7px;
+}
+
+.card h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1); /* faint line */
+}
+
 #contact {
     color: white;
     font-size: 150%;
