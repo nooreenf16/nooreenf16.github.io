@@ -200,7 +200,7 @@ nav {
   bottom: 0;
   width: 100%;
   height: 1px;
-  background-color: rgba(0, 0, 0, 0.1); /* faint line */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #contact {
